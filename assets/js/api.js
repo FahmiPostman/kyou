@@ -22,18 +22,18 @@ export const fetchData = function (URL, callback) {
 
 export const url = {
     currentWeather(lat, lon){
-        return `https://api.openweathermap.org/data/2.5/weather?${lat}&${lon}&units=metric`;
+        return `https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?${lat}&${lon}&units=metric`;
     },
     forecast(lat, lon){
-        return `https://api.openweathermap.org/data/2.5/forecast?${lat}&${lon}&units=metric&appid`;
+        return `https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/forecast?${lat}&${lon}&units=metric&appid`;
     },
     airPolution(lat, lon){
-        return `https://api.openweathermap.org/data/2.5/air_pollution?${lat}&${lon}`;
+        return `https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/air_pollution?${lat}&${lon}`;
     },
     reverseGeo(lat, lon){
-        return `https://api.openweathermap.org/geo/1.0/reverse?${lat}&${lon}&limit=5`;
+        return `https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/geo/1.0/reverse?${lat}&${lon}&limit=5`;
     },
     geo(query){
-        return `https://api.openweathermap.org/geo/1.0/direct?q=${query}&limit=5`;
+        return `https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/geo/1.0/direct?q=${query}&limit=5`;
     }
 };
